@@ -3,7 +3,8 @@ chrome.runtime.onInstalled.addListener(function() {
   chrome.contextMenus.create({
     id: 'copyAsMarkdown',
     title: 'Copy page as Markdown',
-    contexts: ['page']
+    contexts: ['page'],
+    icons: { '16': 'icons/icon16.png', '32': 'icons/icon32.png' }
   });
 });
 
